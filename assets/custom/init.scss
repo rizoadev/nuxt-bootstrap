@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+// Required
+@import "~bootstrap/scss/functions";
+
+@import "./var";
+
+// Required
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+// Optional Bootstrap components here
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+
+// 4. Include any optional Bootstrap CSS as needed
+// @import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/buttons";
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/containers";
+// @import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/helpers";
+@import '~bootstrap/scss/bootstrap';
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utililies.scss`
+@import "~bootstrap/scss/utilities/api";
+
+
+@import "./buttons";
+
+
+
+.accordion-button:not(.collapsed) {
+  color: $body-color;
+  background-color: $light;
+  box-shadow: none;
+}
